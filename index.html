@@ -49,8 +49,8 @@
 
 
 
-    <section class="container BackgroundDoutor section_padding ">
-
+    <section class="container section_padding AboutDoctor">
+        <img class="BackgroundDoutor2" src="./asset/doutor-rafael.png" alt="">
         <div class="AboutProd">
             <div class="TitleGrey">
                 <div class="TextTitle TitleBack">
@@ -103,6 +103,8 @@
         </div>
         <div class="listCards">
             <div class="card">
+                <img class="badgeDescont" src="./asset/badge.png" alt="">
+                <img class="badgeDescontMobile" src="./asset/badge-mobile.png" alt="">
                 <div class="title-card">
                     <h2>Escolha seu pacote</h2>
                 </div>
@@ -154,7 +156,11 @@
                                 d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                         </svg>Cancele quando quiser /Sem taxas</span>
                     <div class="buttonSmalCard">
-                        <span> <img src="./asset/check-icon-mobile.png" alt=""><b>SIM!</b> Eu quero ser assinate e
+                        <span onclick="Toogle()"> <img id="Notsubscribe" class="subscribe on"
+                                src="./asset/check-icon-mobile.png" alt="">
+                            <img id="Subscribe" class="subscribe " src="./asset/check-icon-mobile-checked.png" alt="">
+                            <b>SIM!</b> Eu
+                            quero ser assinate e
                             ganhar
                             desconto</span>
                     </div>
@@ -353,6 +359,8 @@
         </div>
         <div class="listCards">
             <div class="card">
+                <img class="badgeDescont" src="./asset/badge.png" alt="">
+                <img class="badgeDescontMobile" src="./asset/badge-mobile.png" alt="">
                 <div class="title-card">
                     <h2>Escolha seu pacote</h2>
                 </div>
@@ -404,7 +412,11 @@
                                 d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                         </svg>Cancele quando quiser /Sem taxas</span>
                     <div class="buttonSmalCard">
-                        <span> <img src="./asset/check-icon-mobile.png" alt=""><b>SIM! </b> Eu quero ser assinate e
+                        <span onclick="Toogle()"> <img id="Notsubscribe" class="subscribe on"
+                                src="./asset/check-icon-mobile.png" alt="">
+                            <img id="Subscribe" class="subscribe " src="./asset/check-icon-mobile-checked.png" alt="">
+                            <b>SIM!</b> Eu
+                            quero ser assinate e
                             ganhar
                             desconto</span>
                     </div>
@@ -423,21 +435,12 @@
         </div>
         <div class="sourceFooter">
             <img src="./asset/logo_footer-DoutorNature.svg" alt="">
-            <p> 2022 Doutor Nture -Todos os Direitos Reservados -Política de Privacidade | Termos de Uso</p>
+            <p> &#169;2022 Doutor Nture -Todos os Direitos Reservados -Política de Privacidade | Termos de Uso</p>
         </div>
     </section>
 
 </body>
-<script>
-    const toggleBtns = document.querySelectorAll('.toggle');
+<script src="./script.js"></script>
 
-    toggleBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            const question = e.currentTarget.parentElement.parentElement//PEGANDO O PAI DO CURRENT TARGET
-            console.log(question)
-            question.classList.toggle("show")
-        })
-    })
-</script>
 
 </html>

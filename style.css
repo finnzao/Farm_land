@@ -106,6 +106,18 @@
     background-repeat: no-repeat;
     background-position: bottom right 40px;
     background-blend-mode: overlay;
+    background-attachment: local;
+}
+
+.AboutDoctor {
+    position: relative;
+}
+
+.BackgroundDoutor2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 33%;
 }
 
 .TextAbout {
@@ -194,7 +206,7 @@
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     z-index: 2;
-
+    position: relative;
 }
 
 .priceCard {
@@ -454,6 +466,17 @@
     cursor: pointer;
 }
 
+.badgeDescont {
+    position: absolute;
+    top: -38px;
+    width: 70px;
+    left: 319px;
+}
+
+.badgeDescontMobile {
+    display: none;
+}
+
 .TitleBack h1 {
     width: 490px;
     opacity: 0.7;
@@ -508,6 +531,23 @@
     width: 80%;
 }
 
+.subscribe {
+    cursor: pointer;
+    display: none;
+}
+
+.subscribe img {
+    display: none;
+}
+
+.subscribe.off {
+    display: none;
+}
+
+.subscribe.on {
+    display: block
+}
+
 /* RESPONSIVE*/
 @media (max-width:768px) {
     body {
@@ -519,9 +559,8 @@
         min-height: 100vh;
     }
 
-    .BackgroundDoutor {
-        background-color: white;
-        margin: 0px 20px;
+    .BackgroundDoutor2 {
+        display: none;
     }
 
     .videoHeader {
@@ -557,6 +596,7 @@
     }
 
     .listCards {
+        margin-top: 34px;
         color: white;
         display: flex;
         align-items: center;
@@ -677,6 +717,18 @@
     .TitleWhite .background {
         width: 100%;
 
+    }
+
+    .badgeDescont {
+        display: none;
+    }
+
+    .badgeDescontMobile {
+        display: block;
+        position: absolute;
+        top: -45px;
+        width: 77px;
+        left: 213px;
     }
 
     /*ABOUT*/
